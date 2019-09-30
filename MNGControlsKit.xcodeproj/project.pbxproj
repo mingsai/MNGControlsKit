@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07C9628523425EDA00382EC9 /* MNGControlsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9628423425EDA00382EC9 /* MNGControlsKit.swift */; };
+		07C9628F234275D900382EC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9628E234275D900382EC9 /* ViewController.swift */; };
+		07C96290234276A700382EC9 /* MNGMultiSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C9628B23425F6B00382EC9 /* MNGMultiSegmentControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		07C9628123425EDA00382EC9 /* libMNGControlsKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMNGControlsKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C9628423425EDA00382EC9 /* MNGControlsKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNGControlsKit.swift; sourceTree = "<group>"; };
+		07C9628B23425F6B00382EC9 /* MNGMultiSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MNGMultiSegmentControl.swift; sourceTree = "<group>"; };
+		07C9628D2342741000382EC9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		07C9628E234275D900382EC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,10 @@
 		07C9628323425EDA00382EC9 /* MNGControlsKit */ = {
 			isa = PBXGroup;
 			children = (
+				07C9628E234275D900382EC9 /* ViewController.swift */,
 				07C9628423425EDA00382EC9 /* MNGControlsKit.swift */,
+				07C9628B23425F6B00382EC9 /* MNGMultiSegmentControl.swift */,
+				07C9628D2342741000382EC9 /* Main.storyboard */,
 			);
 			path = MNGControlsKit;
 			sourceTree = "<group>";
@@ -120,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C96290234276A700382EC9 /* MNGMultiSegmentControl.swift in Sources */,
+				07C9628F234275D900382EC9 /* ViewController.swift in Sources */,
 				07C9628523425EDA00382EC9 /* MNGControlsKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
