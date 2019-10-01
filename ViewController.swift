@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var customSegmentedControl: MNGMultiSegmentControl!
     ///file:///Users/Shared/Working/iosapps/MNGControlsKit/MNGControlsKit/Main.storyboard: error: IB Designables: Failed to render and update auto layout status for UIViewController (hBF-oH-7Uf): Failed to load designables from path (null)
     @IBAction func customSegementIndexChanged() {
+        debugPrint("segmenetValueChanged...")
     }
     
     override func viewDidLoad() {

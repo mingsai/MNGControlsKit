@@ -10,10 +10,7 @@ import UIKit
 
 @IBDesignable
 class MNGMultiSegmentControl: UIControl {
-    //a callable method
-    var didFinishTappingButton:((UIButton)->())!
     var buttons = [UIButton]()
-    var selector:UIView!// = UIView(frame: CGRect.zero)
     @IBInspectable
     var borderWidth:CGFloat = 0
     {
@@ -33,6 +30,10 @@ class MNGMultiSegmentControl: UIControl {
             updateView()
         }
     }
+    //a callable method
+    var didFinishTappingButton:((UIButton)->())!
+    var selectedSegmentIndex:Int = 0
+    private var selector:UIView!
     @IBInspectable
     var selectorTextColor:UIColor = UIColor.clear
     @IBInspectable
@@ -44,6 +45,10 @@ class MNGMultiSegmentControl: UIControl {
         layer.cornerRadius = frame.height / 2.0
     }
     @IBAction func animateSelectorOnButtonTap(_ sender: UIButton){
+        
+        if let idx = buttons.firstIndex(of: sender){
+            selectedSegmentIndex = idx
+        }
         UIView.animate(withDuration: 0.6, delay: 0.1, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.7, options: .curveEaseOut, animations: {
             sender.setTitleColor(self.selectorTextColor, for: .normal)
             self.selector.centerXAnchor.constraint(equalTo: sender.centerXAnchor).isActive = true
@@ -91,6 +96,6 @@ class MNGMultiSegmentControl: UIControl {
         selector = UIView(frame: CGRect(x: 0, y: 0, width: self.frame.width / CGFloat(buttonTitles.count), height: self.frame.height))
         selector.layer.cornerRadius = self.frame.height / 2.0
         selector.layer.backgroundColor = selectorColor.cgColor
-        addSubview(selector)
+        self.addSubview(selector)
     }
 }

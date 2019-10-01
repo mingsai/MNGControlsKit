@@ -15,12 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Dhq-zo-UN7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
+                            </stackView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5py-nU-K3z" customClass="MNGMultiSegmentControl" customModuleProvider="target">
-                                <rect key="frame" x="67" y="111" width="240" height="80"/>
+                                <rect key="frame" x="93" y="294" width="201" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="commaSeparatedButtonTitles" value="Any,Bee,Cat"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="commaSeparatedButtonTitles" value="Any, Bee, Cat"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectorTextColor">
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
@@ -43,6 +45,12 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Dhq-zo-UN7" secondAttribute="bottom" id="NZn-yA-hSG"/>
+                            <constraint firstItem="Dhq-zo-UN7" firstAttribute="leading" secondItem="4Wz-RE-hyR" secondAttribute="leadingMargin" id="Omc-Zq-KFN"/>
+                            <constraint firstItem="Dhq-zo-UN7" firstAttribute="top" secondItem="4Wz-RE-hyR" secondAttribute="topMargin" id="UhW-hQ-J0Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dhq-zo-UN7" secondAttribute="trailing" id="lke-Yc-Hi9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OLy-VN-JKm"/>
                     </view>
                     <connections>
@@ -51,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EeI-qq-Qef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.028985507246382" y="255.80357142857142"/>
+            <point key="canvasLocation" x="-42.399999999999999" y="255.02248875562222"/>
         </scene>
     </scenes>
 </document>
